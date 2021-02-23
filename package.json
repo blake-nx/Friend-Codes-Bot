@@ -5,14 +5,15 @@
   "main": "app.js",
   "dependencies": {
     "bufferutil": "^4.0.3",
-    "erlpack": "^0.1.3",
     "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "erlpack": "^0.1.3",
     "libsodium-wrappers": "^0.7.9",
     "opusscript": "^0.0.7",
+    "sequelize": "^6.5.0",
     "sodium": "^3.0.2",
     "sqlite3": "^5.0.2",
     "utf-8-validate": "^5.0.4",
-    "sequelize": "^6.5.0",
     "zlib-sync": "^0.1.7"
   },
   "devDependencies": {},
