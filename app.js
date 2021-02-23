@@ -7,6 +7,7 @@ const db = require("./db.js");
 const helpers = require("./helpers.js");
 const addFriendCode = require("./commands/addFriendCode.js");
 const getAuthorFriendCode = require("./commands/getAuthorFriendCode.js");
+const updateFriendCode = require("./commands/updateFriendCode.js");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -24,9 +25,13 @@ client.on("message", async (msg) => {
   if (command.toLowerCase() === "addcode") {
     addFriendCode(args.join(""), msg);
   }
-  // Get message author's friend code
+  // Get friend code
   if (command.toLowerCase() === "mycode") {
     getAuthorFriendCode(msg);
+  }
+  // Update friend code
+  if (command.toLowerCase() === "newcode") {
+    updateFriendCode(args.join(""), msg);
   }
 });
 client.login(BOT_TOKEN);
