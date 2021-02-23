@@ -5,7 +5,7 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const db = require("./db.js");
 const helpers = require("./helpers.js");
-const addFriendCode = require("./modules/addFriendCode.js");
+const addFriendCode = require("./commands/addFriendCode.js");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
