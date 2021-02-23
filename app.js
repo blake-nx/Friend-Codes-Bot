@@ -9,6 +9,7 @@ const addFriendCode = require("./commands/addFriendCode.js");
 const getAuthorFriendCode = require("./commands/getAuthorFriendCode.js");
 const updateFriendCode = require("./commands/updateFriendCode.js");
 const deleteFriendCode = require("./commands/deleteFriendCode.js");
+const getMentionFriendCode = require("./commands/getMentionFriendCode.js");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -34,8 +35,13 @@ client.on("message", async (msg) => {
   if (command.toLowerCase() === "newcode") {
     updateFriendCode(args.join(""), msg);
   }
+  // Delete friend code
   if (command.toLowerCase() === "delcode") {
     deleteFriendCode(msg);
+  }
+  // Get other user's friend code from mention
+  if (command.toLowerCase() === "fc") {
+    getMentionFriendCode(args, msg);
   }
 });
 client.login(BOT_TOKEN);
