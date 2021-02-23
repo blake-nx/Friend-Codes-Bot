@@ -6,6 +6,7 @@ const BOT_TOKEN = process.env.BOT_TOKEN;
 const db = require("./db.js");
 const helpers = require("./helpers.js");
 const addFriendCode = require("./commands/addFriendCode.js");
+const getAuthorFriendCode = require("./commands/getAuthorFriendCode.js");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -22,6 +23,10 @@ client.on("message", async (msg) => {
   // Add friend code
   if (command.toLowerCase() === "addcode") {
     addFriendCode(args.join(""), msg);
+  }
+  // Get message author's friend code
+  if (command.toLowerCase() === "mycode") {
+    getAuthorFriendCode(msg);
   }
 });
 client.login(BOT_TOKEN);
