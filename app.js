@@ -43,5 +43,11 @@ client.on("message", async (msg) => {
   if (command.toLowerCase() === "fc") {
     getMentionFriendCode(args, msg);
   }
+  // Send bot invite link
+  if (command.toLowerCase() === "linkme") {
+    msg.channel.send(
+      `https://discord.com/api/oauth2/authorize?${CLIENT_ID}=749100429597736970&permissions=8&scope=bot`
+    );
+  }
 });
 client.login(BOT_TOKEN);
