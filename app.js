@@ -39,7 +39,7 @@ client.on("message", async (msg) => {
   if (command.toLowerCase() === "delcode") {
     deleteFriendCode(msg);
   }
-  // Get other user's friend code from mention
+  // Get mentioned user's friend code
   if (command.toLowerCase() === "fc") {
     getMentionFriendCode(args, msg);
   }
