@@ -1,3 +1,5 @@
+const db = require("../db.js");
+
 const getAuthorFriendCode = async (msg) => {
   // Find user in db
   const friendcode = await db.findOne({

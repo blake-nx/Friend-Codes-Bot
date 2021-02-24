@@ -1,6 +1,7 @@
-const getMentionFriendCode = async (args, msg) => {
-  if (args[0]) {
-    const user = getUserFromMention(args[0]);
+const db = require("../db.js");
+
+const getMentionFriendCode = async (user, msg) => {
+  if (user) {
     // Find user in db
     const friendcode = await db.findOne({
       where: { username: `${user.username}` },

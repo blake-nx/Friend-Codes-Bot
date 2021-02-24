@@ -1,8 +1,11 @@
-const updateFriendCode = async (friendcode, msg) => {
+const updateFriendCode = async (friendcode, msg, db) => {
+  const regex = /[0-9\s]/m;
+
   const affectedRows = await db.update(
     { pogocode: `${friendcode}` },
     { where: { username: `${msg.author.username}` } }
   );
+
   if (
     friendcode.length > 15 ||
     regex.exec(friendcode) === null ||

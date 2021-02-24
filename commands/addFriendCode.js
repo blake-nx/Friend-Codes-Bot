@@ -1,3 +1,5 @@
+const db = require("../db.js");
+
 const addFriendCode = async (friendcode, msg) => {
   const regex = /[0-9\s]/m;
 
