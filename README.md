@@ -2,7 +2,6 @@
 
 FriendCodes Bot stores your Pokemon Go friend code for easy sharing across Discord.
 
-![2021-02-23_18h44_51](https://user-images.githubusercontent.com/13428576/108928770-5a326480-7608-11eb-9c84-ecfac1b3e3f7.png)
 ![2021-02-23_18h45_06](https://user-images.githubusercontent.com/13428576/108928776-5dc5eb80-7608-11eb-968b-77caf8a4a422.png)
 
 ## Features
@@ -21,9 +20,12 @@ FriendCodes Bot stores your Pokemon Go friend code for easy sharing across Disco
 4.  Rename `.env.example` to `.env` and add your own tokens and database credentials.
 5.  run `node app.js`
 
-### Commands:
+### Commands (visual reference below):
 - `addcode [YOUR_CODE_HERE]` adds your friend code to the bot.
 - `mycode` to retrieve your friend code.
 - `delcode` to delete your friend code from the bot.
-- `newcode` to update your friend code.
+- `newcode [NEW_CODE_HERE]` to update your friend code.
 - `fc @mention` to retrieve the mentioned user's friend code.
+
+![2021-02-23_18h44_51](https://user-images.githubusercontent.com/13428576/108928770-5a326480-7608-11eb-9c84-ecfac1b3e3f7.png)
+![2021-02-23_18h45_06](https://user-images.githubusercontent.com/13428576/108928776-5dc5eb80-7608-11eb-968b-77caf8a4a422.png)
