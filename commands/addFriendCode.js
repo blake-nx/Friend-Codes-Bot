@@ -1,6 +1,4 @@
-const db = require("../db.js");
-
-const addFriendCode = async (friendcode, msg) => {
+const addFriendCode = async (friendcode, msg, db) => {
   const regex = /[0-9\s]/m;
 
   // Validate friend code

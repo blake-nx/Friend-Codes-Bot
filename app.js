@@ -38,11 +38,11 @@ client.on("message", async (msg) => {
 
   // Add friend code
   if (command.toLowerCase() === "addcode") {
-    addFriendCode(args.join(""), msg);
+    addFriendCode(args.join(""), msg, db);
   }
   // Get friend code
   if (command.toLowerCase() === "mycode") {
-    getAuthorFriendCode(msg);
+    getAuthorFriendCode(msg, db);
   }
   // Update friend code
   if (command.toLowerCase() === "newcode") {
@@ -50,12 +50,12 @@ client.on("message", async (msg) => {
   }
   // Delete friend code
   if (command.toLowerCase() === "delcode") {
-    deleteFriendCode(msg);
+    deleteFriendCode(msg, db);
   }
   // Get mentioned user's friend code
   if (command.toLowerCase() === "fc") {
     const user = getUserFromMention(args[0]);
-    getMentionFriendCode(user, msg);
+    getMentionFriendCode(user, msg, db);
   }
   // Send bot invite link
   if (command.toLowerCase() === "linkme") {

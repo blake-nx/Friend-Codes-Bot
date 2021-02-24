@@ -1,6 +1,4 @@
-const db = require("../db.js");
-
-const deleteFriendCode = async (msg) => {
+const deleteFriendCode = async (msg, db) => {
   const rowCount = await db.destroy({
     where: { username: `${msg.author.username}` },
   });
