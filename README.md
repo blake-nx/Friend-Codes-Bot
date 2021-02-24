@@ -27,5 +27,5 @@ FriendCodes Bot stores your Pokemon Go friend code for easy sharing across Disco
 - `newcode [NEW_CODE_HERE]` to update your friend code.
 - `fc @mention` to retrieve the mentioned user's friend code.
 
-![2021-02-23_18h44_51](https://user-images.githubusercontent.com/13428576/108928770-5a326480-7608-11eb-9c84-ecfac1b3e3f7.png)
-![2021-02-23_18h45_06](https://user-images.githubusercontent.com/13428576/108928776-5dc5eb80-7608-11eb-968b-77caf8a4a422.png)
+![2021-02-23_19h16_23](https://user-images.githubusercontent.com/13428576/108930505-aaf78c80-760b-11eb-8162-9c3e0c0b303e.png)
+
